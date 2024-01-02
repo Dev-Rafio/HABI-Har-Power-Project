@@ -1,0 +1,37 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+footer{
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  background-color: black;
+  color: white ;
+  width: 100%;
+
+}
+h2{
+    font-size: 50px;
+}
+.text p{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center ;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+  .icon a{
+    font-size: 30px;
+    padding: 10px;
+    
+  }
+  .copy{
+    background-color: cornflowerblue;
+    max-width: 100%;
+  }
+ 
+  @media screen{
+    
+  }

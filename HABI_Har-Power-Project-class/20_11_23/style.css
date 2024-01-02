@@ -1,0 +1,145 @@
+ * {
+     padding: 0px;
+     margin: 0px;
+ }
+
+ .main_section {
+     margin-top: 10%;
+     width: 100%;
+     display: flex;
+     background-color: #ffff;
+     justify-content: center;
+ } 
+ .content {
+     max-width: 40%;
+     height: 100%;
+     margin: 4%;
+ }
+
+ .content h1 {
+     width: 70%;
+     font-size: 40px;
+     font-weight: 300;
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ }
+
+ .content p {
+     margin-top: 20px;
+     width: 70%;
+     font-size: 16px;
+     font-weight: 500;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+
+ .img_area {
+     max-width: 50%;
+     height: 40%;
+     justify-content: start;
+
+ }
+
+ .img_area img {
+     height: 320px;
+     width: 420px;
+ }
+
+ .btn {
+     width: 140px;
+     border-radius: 6px;
+     margin-top: 4%;
+     background-color: #30dd81b3;
+ }
+
+ .btn p {
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     font-weight: 800;
+     font-size: 18px;
+     padding: 12px;
+     opacity: .9;
+     margin-left: 9px;
+ }
+
+ .btn :hover {
+     opacity: 1;
+     cursor: pointer;
+
+ }
+
+
+ @media only screen and (max-width:1000px) {
+
+     .content {
+         max-width: 55%;
+     }
+
+     .img_area {
+         max-width: 35%;
+     }
+ }
+
+ @media only screen and (max-width:700px) {
+
+     .content {
+         margin-top: 10%;
+         max-width: 100%;
+         z-index: 10;
+
+     }
+
+     .content h1 {
+         width: 100%;
+
+     }
+
+     .content p {
+        width: 100%; 
+     }
+
+     .img_area {
+         position: absolute;
+         max-width: 100%;
+         z-index: 0;
+         opacity: .8;
+     }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* @keyframes rafio{
+    0%{
+        background-color:rgb(0, 183, 255)
+    }
+    25%{
+        background-color:green
+    }
+    50%{
+        background-color:rgb(145, 255, 0)
+    }
+    60%{
+        background-color:rgb(255, 94, 0)
+    }
+    70%{
+        background-color:springgreen
+    }
+    
+} */

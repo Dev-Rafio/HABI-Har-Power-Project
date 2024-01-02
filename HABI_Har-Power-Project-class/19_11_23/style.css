@@ -1,0 +1,161 @@
+
+/* Define the colors and fonts */
+:root {
+    --bg-color: #2a1f3a;   
+    --text-color: #ffffff;
+    --link-color: #b8a4c7;
+    --logo-color: #ffffff; 
+    --title-font-size:20px;
+    --logo-font: Arial, sans-serif;
+    --footer-font: Verdana, sans-serif;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.home {
+    height: 50%;
+    width: 100%;
+    padding-top: 10%;
+    padding-bottom: 14%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    overflow: hidden;
+    background: var(--link-color);
+}
+
+/* Style the footer container */
+.footer {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 20px;
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/* Style the logo */
+.logo {
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--logo-color);
+    font-family: var(--logo-font);
+    margin-bottom: 10px;
+}
+
+/* Style the app icons */
+.app-icons {
+    display: flex;
+    align-items: center;
+}
+
+/* Style the app icon images */
+.app-icon {
+    width: 140px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+/* Style the social media icons */
+.social-icons {
+    margin: 2% 2%;
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: var(--logo-color);
+    margin: 10px 10px;
+    font-size: 12px;
+}
+
+/* Style the social media icon images */
+
+
+/* Style the columns of links */
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: auto;
+    align-items: start; 
+}
+
+.brandot {
+    max-width: 25%;
+    margin: 5% 5%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    max-width: 25%;
+    flex-wrap: wrap;
+    margin: 3% 3%;
+}
+
+/* Style the column headings */
+.column-heading {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Style the column links */
+.column-link {
+    display: block;
+    color: var(--link-color);
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+/* Style the column links on hover */
+.column-link:hover {
+    text-decoration: underline;
+}
+
+/* Style the placeholder text */
+.placeholder {
+    color: #999999;
+    font-style: italic;
+}
+
+/* Style the bottom text */
+.bottom-text {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.text-social {
+    overflow: hidden;
+    margin-right: 5%;
+    height: auto;
+}
+
+@media only screen and (max-width:1100px) {
+    .column {
+        max-width: 30%;
+        margin: 6% 6%;
+
+    }
+
+    .brandot {
+        max-width: 80%;
+        padding: 5%;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .column {
+        max-width: 50%;
+    }
+
+    .brandot {
+        max-width: 80%;
+        padding: 5%;
+    }
+}
+ 

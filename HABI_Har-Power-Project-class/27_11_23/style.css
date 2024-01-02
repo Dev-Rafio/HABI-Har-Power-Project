@@ -1,0 +1,76 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: green;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.hero {
+    height: calc(100vh - 80px);
+    background-image: url("bg.jpeg");
+    background-size: cover;
+    opacity: .8;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.overlay {
+    width: 80%;
+    height: 60%;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.overlay h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+
+.overlay p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+.overlay button {
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}

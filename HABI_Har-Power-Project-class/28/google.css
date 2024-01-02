@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin: 10px 15px;
+}
+nav a{
+    font-size: 16px;
+    font-weight: 600;
+    color: gray;
+    text-decoration: none;
+    padding: 10px 14px;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+ .gamil-logo{
+    width: 40px;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+
+
+/* Header code start */
+
+header{
+    width: 60%;
+    margin: 90px auto 20px auto;
+}
+.google-img{
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    position: relative;
+}
+.search-box{
+    width: 600px;
+    margin: 22px auto;
+    position: relative;
+}
+.search-box input{
+    display: block;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    padding: 13px;
+    border-radius: 25px;
+    outline: none;
+    box-shadow: 5px 2px 10px rgba(128, 128, 128, 0.626);
+    padding-left: 50px;
+    position: relative;
+}
+
+.voice-mic{
+    width: 22px;
+    position: absolute;
+    top: 10px;
+    left: 88%;
+   
+} 
+.google-cemera{
+    width: 22px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+} 
+
+

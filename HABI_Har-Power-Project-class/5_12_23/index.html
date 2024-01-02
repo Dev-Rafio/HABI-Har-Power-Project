@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.usebootstrap.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
+    <title>Boostrap </title>
+</head>
+
+<body>
+
+    <!-- ALERTS  -->
+
+    <h1>Alerts Example</h1>
+
+
+    <div class="alert alert-primary" role="alert">
+        A simple primary alert—check it out!
+    </div>
+
+    <!-- with action -->
+
+   
+    <button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>
+
+    <button type="button" class="btn btn-danger" id="liveAlertBtn2">Show live alert 2 </button>
+
+
+    <div id="liveAlertPlaceholder">
+
+    </div>
+
+    <div id="liveAlertPlaceholder2">
+
+    </div>
+ 
+
+
+
+
+     <script>
+        // aleart 1 
+        const alertPlaceholder = document.getElementById("liveAlertPlaceholder");
+        const appendAlert = (message, type) => {
+            const wrapper = document.createElement("div");
+            wrapper.innerHTML = [
+                `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+                `   <div>${message}</div>`,
+                '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+                "</div>",
+            ].join("");
+
+            alertPlaceholder.append(wrapper);
+        };
+
+        const alertTrigger = document.getElementById("liveAlertBtn");
+
+        alertTrigger.addEventListener("click", () => {
+            appendAlert("Success New msg hare", "success");
+        });
+ 
+        // aleart 2 
+
+        const alertPlaceholder2 = document.getElementById("liveAlertPlaceholder2");
+        const appendAlert2 = (message, type) => {
+            const wrapper = document.createElement("div");
+            wrapper.innerHTML = [
+                `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+                `   <div>${message}</div>`,
+                '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+                "</div>",
+            ].join("");
+
+            alertPlaceholder2.append(wrapper);
+        };
+
+        const alertTrigger2 = document.getElementById("liveAlertBtn2");
+
+        alertTrigger2.addEventListener("click", () => {
+            appendAlert2("Danger New msg hare", "danger");
+        });
+
+
+    </script> 
+
+  <!-- advanced waye  -->
+     <!-- <script>
+        const alertPlaceholder = document.getElementById("liveAlertPlaceholder");
+        const alertPlaceholder2 = document.getElementById("liveAlertPlaceholder2");
+
+        const appendAlert = (message, type, ty) => {
+            const wrapper = document.createElement("div");
+            wrapper.innerHTML = [
+
+                `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+                    `<br/>`,
+
+                `<h3> ${ty} </h3>`,
+
+                `   <div>${message}</div>`,
+                '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+                "</div>",
+            ].join("");
+
+            alertPlaceholder.append(wrapper);
+        };
+
+        const alertTrigger = document.getElementById("liveAlertBtn");
+        const alertTrigger2 = document.getElementById("liveAlertBtn2");
+
+
+        console.log("toggle 1 call")
+        alertTrigger.addEventListener("click", () => {
+            appendAlert(" Success aleart New msg hare", "success", "Succes aleart");
+        });
+        alertTrigger2.addEventListener("click", () => {
+            appendAlert(" Danger aleart New msg hare", "danger", "Danger aleart");
+        });
+
+
+    </script>  -->
+
+    <!-- JUMBOTRON  -->
+
+
+    <!-- <div class="jumbotron m-5">
+        <h1>JUMBOTRON</h1>
+    </div> -->
+
+
+    <!-- BADGES  -->
+    <h1>Badge Example</h1>
+
+    <button type="button" class="btn btn-primary position-relative">
+        Inbox
+        <span class="position-absolute top-0 translate-middle badge rounded-5 bg-danger">
+            20
+        </span>
+    </button>
+
+
+    <!-- PROGRESS BAR  -->
+
+    <h1>Progress bar Example</h1>
+
+    <div class="progress m-5 "  > 
+
+        <div class="progress-bar  progress-bar-striped progress-bar-animated" style="width: 40%">40%</div>
+
+    </div>
+
+
+
+
+
+    <!-- linking js  -->
+    <!-- <script src="script.js"></script> -->
+</body>
+
+</html>

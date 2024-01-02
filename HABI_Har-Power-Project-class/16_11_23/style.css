@@ -1,0 +1,71 @@
+.tx{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    margin: 100px auto;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    font-size: 20px;
+    animation-name: ani;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    position: relative;
+    
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in; 
+
+  }
+  @keyframes ani{
+    0%{ left: 0px;
+      top: 0px;
+    }
+    50%{
+      top: 200px;
+    }
+    100%{ left: 500px;
+    top: 0px;
+    }
+  }
+
+
+
+.rx{
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  border-radius: 50%;
+ margin: 10% auto;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ color: white;
+ font-size: 20px;
+ animation-name: rafio;
+ animation-duration: 2s;
+ animation-iteration-count: infinite;
+}
+
+
+@keyframes rafio {
+  0%{
+    background-color: green;
+    width: 250px
+  }
+  30%{
+    background-color: blue;
+    
+  }
+  50%{
+    background-color: black
+  }
+  70%{
+    background-color: yellow;
+  }
+  100%{
+    background-color: deepskyblue;
+    
+  }
+}

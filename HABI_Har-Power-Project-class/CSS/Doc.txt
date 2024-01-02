@@ -1,0 +1,12 @@
+Css style cover
+
+* css basic syntex cover { css link , class , id  }
+ 
+1. Color
+2. Background-color
+3. Padding
+4. Margin
+5. Border
+6. TextStyle
+     1.  
+

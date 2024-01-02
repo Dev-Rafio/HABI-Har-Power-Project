@@ -1,0 +1,4 @@
+h1::after{
+    content: "bd";
+    color: red;
+}

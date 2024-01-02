@@ -1,0 +1,22 @@
+/* .link {
+    color: green; 
+} 
+.link:hover {
+    color: black; 
+}
+
+.link:active {
+    color: rgb(255, 0, 183); 
+}
+  */
+ 
+
+.ull{ 
+    /* type , image , position , all */
+
+}
+
+.oll{
+list-style: square inside url(heart.png);
+
+}
